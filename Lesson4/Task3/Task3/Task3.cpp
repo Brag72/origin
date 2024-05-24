@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <windows.h>
 
 using namespace std;
 
@@ -259,12 +260,12 @@ public:
     }
 };
 
-class Square : public Rectangle
+class Square : public Quadrangle
 {
 
 public:
 
-    Square(int _a, int _b, int _c, int _d, int _A, int _B, int _C, int _D) : Rectangle(_a, _b, _c, _d, _A, _B, _C, _D)
+    Square(int _a, int _b, int _c, int _d, int _A, int _B, int _C, int _D) : Quadrangle(_a, _b, _c, _d, _A, _B, _C, _D)
     {
         set_name("Квадрат");
     }
@@ -303,19 +304,19 @@ public:
     }
 };
 
-class Rhombus : public Parallelogram
+class Rhombus : public Quadrangle
 {
 
 public:
 
-    Rhombus(int _a, int _b, int _c, int _d, int _A, int _B, int _C, int _D) : Parallelogram(_a, _b, _c, _d, _A, _B, _C, _D)
+    Rhombus(int _a, int _b, int _c, int _d, int _A, int _B, int _C, int _D) : Quadrangle(_a, _b, _c, _d, _A, _B, _C, _D)
     {
         set_name("Ромб");
     }
 
     bool check() override
     {
-        if (Parallelogram::check() && get_side("a") == get_side("b") == get_side("c") == get_side("d") &&
+        if (Quadrangle::check() && get_side("a") == get_side("b") == get_side("c") == get_side("d") &&
             get_angle("A") == get_angle("C") && get_angle("B") == get_angle("D"))
         {
             return true;
@@ -326,6 +327,11 @@ public:
 
 int main()
 {
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+
+    setlocale(LC_ALL, "Russian");
+
     Figure figure(0);
     figure.print_info();
 
@@ -346,9 +352,6 @@ int main()
 
     Quadrangle quadrangle(10, 20, 30, 40, 50, 60, 70, 80);
     quadrangle.print_info();
-
-    Rectangle rectangle(10, 20, 10, 20, 90, 90, 90, 90);
-    rectangle.print_info();
 
     Square square(20, 20, 20, 20, 90, 90, 90, 90);
     square.print_info();
