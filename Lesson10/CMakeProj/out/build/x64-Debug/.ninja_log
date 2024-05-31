@@ -1,0 +1,6 @@
+# ninja log v5
+3	286	7388938300404454	LeaverLib/CMakeFiles/LeaverLib.dir/Leaver.cpp.obj	5e031725bce92d33
+286	493	7388938302366231	LeaverLib/LeaverLib.dll	527d7b2d58343eb0
+286	493	7388938302366231	LeaverLib/LeaverLib.lib	527d7b2d58343eb0
+6	577	7388938303307088	Client/CMakeFiles/Client.dir/Client.cpp.obj	bffa36adc024ee6c
+577	786	7388938304794389	Client/Client.exe	dd5c09f40c009fe5
