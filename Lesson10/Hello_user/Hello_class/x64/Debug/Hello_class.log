@@ -1,5 +1,2 @@
 ﻿  Class_hello.cpp
-C:\Users\bRaG\Desktop\Домашнее задание С++\Базовое программирование\Lesson10\Hello_user\Hello_class\Class_hello.h(2,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-  (компиляция исходного файла "Class_hello.cpp")
-  
   Hello_class.vcxproj -> C:\Users\bRaG\Desktop\Домашнее задание С++\Базовое программирование\Lesson10\Hello_user\x64\Debug\Hello_class_lib.lib
