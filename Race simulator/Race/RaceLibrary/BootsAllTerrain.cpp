@@ -16,5 +16,5 @@ double BootsAllTerrain::TimeComplRace(Race& race)
 
 	if (num_stops < 1) { return race.GetDistance() / GetSpeed(); }
 	if (num_stops == 1) { return race.GetDistance() / GetSpeed() + 10; }
-	if (num_stops > 1) { return race.GetDistance() / GetSpeed() + ((num_stops - 1) * 5) + 10; }
+	return race.GetDistance() / GetSpeed() + ((num_stops - 1) * 5) + 10;
 }

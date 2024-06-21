@@ -2,12 +2,8 @@
 #include <string>
 #include <iostream>
 #include "Vehicle.h"
+#include "spec.h"
 
-#ifdef RACELIBRARY_EXPORTS
-#define RACELIBRARY_API __declspec(dllexport)
-#else
-#define RACELIBRARY_API __declspec(dllimport)
-#endif
 
 class RACELIBRARY_API Race
 {

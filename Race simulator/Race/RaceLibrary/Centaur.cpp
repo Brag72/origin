@@ -15,5 +15,5 @@ double Centaur::TimeComplRace(Race& race)
 	if (num_stops >= 1 && race.GetDistance() / GetSpeed() / GetTimeRest() == num_stops) { num_stops--; }
 
 	if (num_stops < 1) { return race.GetDistance() / GetSpeed(); }
-	if (num_stops >= 1) { return race.GetDistance() / GetSpeed() + num_stops * 2; }
+	return race.GetDistance() / GetSpeed() + num_stops * 2;
 }

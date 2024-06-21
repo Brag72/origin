@@ -1,3 +1,4 @@
+#pragma warning (disable : 4267)
 #include <iostream>
 #include "BootsAllTerrain.h"
 #include "Camel.h"
@@ -84,13 +85,12 @@ int main()
             {
                 continue;
             }
-            if (Select != 0 && Race.GetType() != "All")
+            if (Select != 0)
             {
-                if (VehiclesArray[Select - 1]->GetVehType() != Race.GetType())
+                if (VehiclesArray[Select - 1]->GetVehType() != Race.GetType() && Race.GetType() != "All")
                 {
                     cout << "Попытка зарегистрировать неправильный тип транспортного средства!" << endl;
                     continue;
-
                 }
                 if (VehiclesArray[Select - 1]->GetRegCheck())
                 {
@@ -98,7 +98,6 @@ int main()
                     continue;
                 }
             }
-
 
             if (Select == 0)
             {

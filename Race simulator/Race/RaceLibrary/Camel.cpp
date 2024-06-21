@@ -16,5 +16,5 @@ double Camel::TimeComplRace(Race& race)
 
 	if (num_stops < 1) { return race.GetDistance() / GetSpeed(); }
 	if (num_stops == 1) { return race.GetDistance() / GetSpeed() + 5; }
-	if (num_stops > 1) { return race.GetDistance() / GetSpeed() + ((num_stops - 1) * 8) + 5; }
+	return race.GetDistance() / GetSpeed() + ((num_stops - 1) * 8) + 5;	
 }

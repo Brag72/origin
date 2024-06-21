@@ -149,6 +149,7 @@
     <ClInclude Include="Centaur.h" />
     <ClInclude Include="Eagle.h" />
     <ClInclude Include="Race.h" />
+    <ClInclude Include="spec.h" />
     <ClInclude Include="Vehicle.h" />
     <ClInclude Include="VehicleAir.h" />
     <ClInclude Include="VehicleLand.h" />
